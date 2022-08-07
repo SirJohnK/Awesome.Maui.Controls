@@ -17,7 +17,73 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 		<Title>Awesome.Maui.Controls</Title>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>1.0.0-beta</Version>
+		<Authors>Johan Svensson</Authors>
+		<Copyright>© 2022 Johan Svensson All Rights Reserved</Copyright>
+		<Description>A collection of awesome .NET MAUI controls.</Description>
+		<PackageProjectUrl>https://github.com/SirJohnK/Awesome.Maui.Controls</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/SirJohnK/Awesome.Maui.Controls</RepositoryUrl>
+		<PackageIcon>sirjohnk.png</PackageIcon>
+		<PackageTags>dotnet,maui,ui-components</PackageTags>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationTitle>Awesome.Maui.Controls</ApplicationTitle>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="LICENSE.txt" />
+	  <None Remove="sirjohnk.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="LICENSE.txt">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="sirjohnk.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </EmbeddedResource>
+	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="CircularFontIcon.xaml">
