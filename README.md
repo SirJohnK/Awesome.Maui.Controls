@@ -2,6 +2,12 @@
 
 A (collection of) awesome .NET MAUI control(s).
 
+### NuGet
+
+|Name|Info|
+| ------------------- | :------------------: |
+|Awesome.Maui.Controls|[![NuGet](https://buildstats.info/nuget/Awesome.Maui.Controls?includePreReleases=true)](https://www.nuget.org/packages/Awesome.Maui.Controls/)|
+
 ## What's included?
 
 The following controls are available in Awesome.Maui.Controls:
