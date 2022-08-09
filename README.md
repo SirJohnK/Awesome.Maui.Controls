@@ -18,7 +18,7 @@ The following controls are available in Awesome.Maui.Controls:
 
 Circular Icon with font Icon label or any label text.
 
-<img src="https://sirjohnk.github.io/images/CircularFontIcon.png" width=100>
+<img src="https://sirjohnk.github.io/assets/images/CircularFontIcon.png" width=100>
 
 Bindable properties:
 * CircleBackgroundColor
